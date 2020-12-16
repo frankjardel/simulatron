@@ -10,7 +10,7 @@ import store from './store'
 // Prints Vue logs when --env.production is *NOT* set while building
 Vue.config.silent = (TNS_ENV === 'production')
 
-Vue.prototype.$api = 'https://stupid-frog-45.loca.lt/'
+Vue.prototype.$api = 'https://yellow-dog-64.loca.lt/'
 
 new Vue({
   store,

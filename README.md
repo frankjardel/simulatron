@@ -70,4 +70,4 @@ $ php bin/console make:controller
 
 # Debug Routes
 
-php bin/console debug:router
+$ php bin/console debug:router

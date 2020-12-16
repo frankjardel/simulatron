@@ -45,7 +45,11 @@ export default {
 			   method: "GET"
 			})
 			.then((response) => {
-				this.$store.dispatch('category', response.content)
+				let data = JSON.parse(response.content)
+				let status = JSON.stringify(data.status)
+
+				if (status)
+					this.$store.dispatch('category', JSON.stringify(data.categories))
 			}, (err) => {
 				alert(err)
 			})
